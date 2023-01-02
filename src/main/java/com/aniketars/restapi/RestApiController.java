@@ -15,12 +15,6 @@ public class RestApiController {
 
     public RestApiController(CoffeeRepository coffeeRepository){
         this.coffeeRepository = coffeeRepository;
-        coffeeRepository.saveAll(List.of(
-                new Coffee("Cafe Cereza"),
-                new Coffee("Cafe Ganador"),
-                new Coffee("Cage Lareno"),
-                new Coffee("Cafe Tres Pontas")
-        ));
     }
 
     @GetMapping
